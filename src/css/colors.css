@@ -1,7 +1,7 @@
-/* UI Colors - Soft Light Pink Outlines */
-$ui-primary: var(--ui-primary, hsla(329, 100%, 95%, 1)); 
-$ui-secondary: #ff85c2; /* Light pink for distinct button outlines */
-$ui-tertiary: #ff4fa9;  /* Medium pink for button depth and shadows */
+/* UI Colors - High Contrast Outlines */
+$ui-primary: var(--ui-primary, hsla(215, 100%, 95%, 1)); 
+$ui-secondary: #252a3d; /* Darker outline color for better distinction */
+$ui-tertiary: #1a1d2b;  /* Deepest shade for button depth */
 
 /* Modal Overlay - Dark Hot Pink */
 $ui-modal-overlay: var(--ui-modal-overlay, hsla(329, 100%, 42%, 0.9)); 
@@ -11,12 +11,12 @@ $ui-white-dim: hsla(0, 100%, 100%, 0.75);
 $ui-white-transparent: hsla(0, 100%, 100%, 0.25); 
 $ui-transparent: hsla(0, 100%, 100%, 0); 
 
-/* Subtle shadow for pink buttons */
-$ui-black-transparent-default: hsla(329, 50%, 10%, 0.2); 
+/* Sharper shadows for buttons */
+$ui-black-transparent-default: rgba(0, 0, 0, 0.35); 
 $ui-black-transparent: var(--ui-black-transparent, $ui-black-transparent-default);
 
-$text-primary: var(--text-primary, hsla(329, 15%, 40%, 1)); 
-$text-primary-transparent: hsla(329, 15%, 40%, 0.75);
+$text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); 
+$text-primary-transparent: hsla(225, 15%, 40%, 0.75);
 
 /* Main Motion Colors - Dark Hot Pink (#d6006e) */
 $motion-primary: #d6006e; 
@@ -27,10 +27,10 @@ $motion-light-transparent: hsla(329, 100%, 32%, 0.15);
 /* opt-in theme overrides */
 $motion-primary-dark: #d6006e; /* Default Top Bar Color */
 
-$ui-primary-light: hsla(329, 100%, 95%, 1);
-$ui-secondary-light: #ff85c2;
-$ui-tertiary-light: #ff4fa9;
-$text-primary-light: hsla(329, 15%, 40%, 1);
+$ui-primary-light: hsla(215, 100%, 95%, 1);
+$ui-secondary-light: hsla(215, 75%, 95%, 1);
+$ui-tertiary-light: hsla(215, 50%, 90%, 1);
+$text-primary-light: hsla(225, 15%, 40%, 1);
 
 $red-primary: #d6006e; 
 $red-tertiary: #a30054; 
