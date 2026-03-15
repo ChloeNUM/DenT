@@ -1,74 +1,52 @@
-/* ==UserStyle==
-@name           Deep Dark Hot Pink PenguinMod
-@namespace      ://github.com
-@version        1.1.0
-@description    Darkens the PenguinMod editor UI and keeps the hot pink accents.
-@author         Your Name
-==/UserStyle== */
+$ui-primary: var(--ui-primary, hsla(215, 100%, 95%, 1)); /* #E5F0FF */
+$ui-secondary: var(--ui-secondary, hsla(215, 75%, 95%, 1)); /* #E9F1FC */
+$ui-tertiary: var(--ui-tertiary, hsla(215, 50%, 90%, 1)); /* #D9E3F2 */
 
-@-moz-document domain("penguinmod.com"), domain("studio.penguinmod.com") {
-    :root {
-        /* --- DARK MODE OVERRIDES (DEEPER DARK) --- */
-        /* Main workspace background */
-        --ui-primary: hsla(225, 15%, 7%, 1); /* Very dark charcoal #0d0e12 */
-        /* Secondary panels (Sprite list, Backpack) */
-        --ui-secondary: hsla(225, 15%, 10%, 1); /* Slightly lighter #1a1b21 */
-        /* Tertiary elements (Selected items, borders) */
-        --ui-tertiary: hsla(225, 15%, 15%, 1); 
-        
-        --ui-modal-overlay: hsla(330, 100%, 71%, 0.4); /* Subtle Hot Pink overlay */
+$ui-modal-overlay: var(--ui-modal-overlay, hsla(194, 100%, 65%, 0.9)); /* 90% transparent version of motion-primary */
 
-        /* Text adjustments for dark background */
-        --text-primary: hsla(0, 0%, 90%, 1); /* Off-white text */
-        --text-primary-transparent: hsla(0, 0%, 90%, 0.75);
+$ui-white: hsla(0, 100%, 100%, 1); /* #FFFFFF */
+$ui-white-dim: hsla(0, 100%, 100%, 0.75); /* 25% transparent version of ui-white */
+$ui-white-transparent: hsla(0, 100%, 100%, 0.25); /* 25% transparent version of ui-white */
+$ui-transparent: hsla(0, 100%, 100%, 0); /* 25% transparent version of ui-white */
 
-        /* --- NAVBAR & MOTION CATEGORY (HOT PINK) --- */
-        --motion-primary: hsla(330, 100%, 71%, 1); /* Hot Pink #FF6BB5 */
-        --motion-tertiary: hsla(330, 100%, 45%, 1); /* Darker Pink */
-        --motion-transparent: hsla(330, 100%, 71%, 0.35);
-        
-        --menu-bar-background-default: hsla(330, 100%, 71%, 1);
+$ui-black-transparent-default: hsla(0, 0%, 0%, 0.15); /* 15% transparent version of black */
+$ui-black-transparent: var(--ui-black-transparent, $ui-black-transparent-default);
 
-        /* --- EXTENSIONS --- */
-        --extensions-primary: hsla(330, 100%, 71%, 1);
-        --extensions-tertiary: hsla(330, 100%, 45%, 1);
-        --extensions-light: hsla(330, 100%, 45%, 1);
+$text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); /* #575E75 */
+$text-primary-transparent: hsla(225, 15%, 40%, 0.75);
 
-        --drop-highlight: hsla(330, 100%, 85%, 1);
-    }
+$motion-primary: hsla(330, 100%, 45%, 1);
+$motion-tertiary: hsla(330, 100%, 25%, 1);
+$motion-transparent: hsla(330, 100%, 45%, 0.35); /* 35% transparent version of motion-primary */
+$motion-light-transparent: hsla(203, 100%, 39%, 0.15); /* 15% transparent version of motion-primary */
 
-    /* Target the Workspace/Blockly background specifically */
-    .injectionDiv, 
-    [class*="gui_blocks-wrapper_"],
-    [class*="blocklySvg_"] {
-        background-color: #080808 !important; /* Near black for the coding area */
-    }
+/* opt-in theme overrides */
+$motion-primary-dark: hsla(330, 100%, 30%, 1); /*top bar color when in dark mode*/
+$ui-primary-light: hsla(215, 100%, 95%, 1);
+$ui-secondary-light: hsla(215, 75%, 95%, 1);
+$ui-tertiary-light: hsla(215, 50%, 90%, 1);
+$text-primary-light: hsla(225, 15%, 40%, 1);
 
-    /* Target the Category Menu (Side bar with icons) */
-    [class*="scratchCategoryMenu_"] {
-        background-color: #0d0e12 !important;
-    }
+$red-primary: hsla(330, 100%, 45%, 1); 
+$red-tertiary: hsla(330, 100%, 30%, 1);
 
-    /* Target the Block Palette (Where you grab blocks from) */
-    [class*="scratchFlyout_"] {
-        background-color: #111216 !important;
-    }
+$sound-primary: hsla(300, 53%, 60%, 1); /* #CF63CF */
+$sound-tertiary: hsla(300, 48%, 50%, 1); /* #BD42BD */
 
-    /* Target the Navbar */
-    [class*="menu-bar_menu-bar_"] {
-        background-color: var(--motion-primary) !important;
-    }
-    
-    /* Target the Extension button */
-    [class*="gui_extension-button-container_"] {
-        background-color: var(--extensions-primary) !important;
-    }
-    
-    /* Sprite Library & Stage area panels */
-    [class*="gui_stage-and-target-wrapper_"],
-    [class*="sprite-selector_sprite-selector_"],
-    [class*="stage-selector_stage-selector_"] {
-        background-color: var(--ui-secondary) !important;
-        border-color: var(--ui-tertiary) !important;
-    }
-}
+$control-primary: hsla(38, 100%, 55%, 1); /* #FFAB19 */
+
+$data-primary: hsla(30, 100%, 55%, 1); /* #FF8C1A */
+
+$pen-primary: hsla(163, 85%, 40%, 1); /* #0FBD8C */
+$pen-transparent: hsla(163, 85%, 40%, 0.25); /* #0FBD8C */
+
+$error-primary: hsla(30, 100%, 55%, 1); /* #FF8C1A */
+$error-light: hsla(30, 100%, 70%, 1); /* #FFB366 */
+$error-transparent: hsla(30, 100%, 55%, 0.25); /* #FF8C1A */
+
+$extensions-primary: hsla(330, 100%, 45%, 1);
+$extensions-tertiary: hsla(330, 100%, 30%, 1);
+$extensions-transparent: hsla(194, 100%, 50%, 0.35); /* 35% transparent version of extensions-primary */
+$extensions-light: hsla(203, 100%, 39%, 1); /* opaque version of extensions-transparent, on white bg */
+
+$drop-highlight: hsla(194, 100%, 77%, 1); /* lighter than motion-primary */
