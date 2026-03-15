@@ -1,58 +1,58 @@
-/* UI Colors - High Contrast Outlines */
-$ui-primary: var(--ui-primary, hsla(215, 100%, 95%, 1)); 
-$ui-secondary: #252a3d; /* Darker outline color for better distinction */
-$ui-tertiary: #1a1d2b;  /* Deepest shade for button depth */
+/* --- PenguinMod Editor UI Colors --- */
 
-/* Modal Overlay - Dark Hot Pink */
-$ui-modal-overlay: var(--ui-modal-overlay, hsla(329, 100%, 42%, 0.9)); 
+/* UI Base Colors */
+$ui-primary: var(--ui-primary, hsla(215, 100%, 95%, 1)); /* #E5F0FF */
+$ui-secondary: var(--ui-secondary, hsla(215, 75%, 95%, 1)); /* #E9F1FC */
+$ui-tertiary: var(--ui-tertiary, hsla(215, 50%, 90%, 1)); /* #D9E3F2 */
 
-$ui-white: hsla(0, 100%, 100%, 1); 
-$ui-white-dim: hsla(0, 100%, 100%, 0.75); 
-$ui-white-transparent: hsla(0, 100%, 100%, 0.25); 
-$ui-transparent: hsla(0, 100%, 100%, 0); 
+$ui-modal-overlay: var(--ui-modal-overlay, hsla(330, 100%, 71%, 0.9)); /* 90% transparent Hot Pink overlay */
 
-/* Sharper shadows for buttons */
-$ui-black-transparent-default: rgba(0, 0, 0, 0.35); 
+$ui-white: hsla(0, 100%, 100%, 1); /* #FFFFFF */
+$ui-white-dim: hsla(0, 100%, 100%, 0.75);
+$ui-white-transparent: hsla(0, 100%, 100%, 0.25);
+$ui-transparent: hsla(0, 100%, 100%, 0);
+
+$ui-black-transparent-default: hsla(0, 0%, 0%, 0.15);
 $ui-black-transparent: var(--ui-black-transparent, $ui-black-transparent-default);
 
-$text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); 
+$text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); /* #575E75 */
 $text-primary-transparent: hsla(225, 15%, 40%, 0.75);
 
-/* Main Motion Colors - Dark Hot Pink (#d6006e) */
-$motion-primary: #d6006e; 
-$motion-tertiary: #a30054; 
-$motion-transparent: hsla(329, 100%, 42%, 0.35); 
-$motion-light-transparent: hsla(329, 100%, 32%, 0.15); 
+/* --- NAVBAR & MOTION CATEGORY (UPDATED TO HOT PINK) --- */
+$motion-primary: hsla(330, 100%, 71%, 1); /* Hot Pink #FF6BB5 */
+$motion-tertiary: hsla(330, 100%, 45%, 1); /* Darker Pink for borders */
+$motion-transparent: hsla(330, 100%, 71%, 0.35); 
+$motion-light-transparent: hsla(330, 100%, 45%, 0.15);
 
-/* opt-in theme overrides */
-$motion-primary-dark: #d6006e; /* Default Top Bar Color */
-
+/* Opt-in Theme Overrides */
+$motion-primary-dark: #FF6BB5; /* Navbar color when in Dark Mode */
 $ui-primary-light: hsla(215, 100%, 95%, 1);
 $ui-secondary-light: hsla(215, 75%, 95%, 1);
 $ui-tertiary-light: hsla(215, 50%, 90%, 1);
 $text-primary-light: hsla(225, 15%, 40%, 1);
 
-$red-primary: #d6006e; 
-$red-tertiary: #a30054; 
+/* Other Category Colors */
+$red-primary: hsla(194, 100%, 50%, 1); 
+$red-tertiary: hsla(203, 100%, 39%, 1);
 
-$sound-primary: hsla(300, 53%, 60%, 1); 
-$sound-tertiary: hsla(300, 48%, 50%, 1); 
+$sound-primary: hsla(300, 53%, 60%, 1); /* #CF63CF */
+$sound-tertiary: hsla(300, 48%, 50%, 1); /* #BD42BD */
 
-$control-primary: hsla(38, 100%, 55%, 1); 
+$control-primary: hsla(38, 100%, 55%, 1); /* #FFAB19 */
 
-$data-primary: hsla(30, 100%, 55%, 1); 
+$data-primary: hsla(30, 100%, 55%, 1); /* #FF8C1A */
 
-$pen-primary: hsla(163, 85%, 40%, 1); 
-$pen-transparent: hsla(163, 85%, 40%, 0.25); 
+$pen-primary: hsla(163, 85%, 40%, 1); /* #0FBD8C */
+$pen-transparent: hsla(163, 85%, 40%, 0.25);
 
 $error-primary: hsla(30, 100%, 55%, 1); 
 $error-light: hsla(30, 100%, 70%, 1); 
-$error-transparent: hsla(30, 100%, 55%, 0.25); 
+$error-transparent: hsla(30, 100%, 55%, 0.25);
 
-/* Extensions - Matching Dark Hot Pink */
-$extensions-primary: #d6006e;
-$extensions-tertiary: #a30054;
-$extensions-transparent: hsla(329, 100%, 42%, 0.35); 
-$extensions-light: #a30054; 
+/* --- EXTENSIONS (UPDATED TO MATCH NAVBAR) --- */
+$extensions-primary: hsla(330, 100%, 71%, 1);
+$extensions-tertiary: hsla(330, 100%, 45%, 1);
+$extensions-transparent: hsla(330, 100%, 71%, 0.35);
+$extensions-light: hsla(330, 100%, 45%, 1);
 
-$drop-highlight: hsla(329, 100%, 77%, 1); 
+$drop-highlight: hsla(330, 100%, 85%, 1); /* Lighter pink for dragging highlight */
