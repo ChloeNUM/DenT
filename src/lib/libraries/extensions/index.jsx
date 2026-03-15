@@ -588,15 +588,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'SharkPool\'s Extension Collection',
-        href: 'https://sharkpools-extensions.vercel.app/?originPM=true',
-        extensionId: 'special_sharkpoolExtensionLibrary',
-        iconURL: sharkpoolGalleryIcon,
-        description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',
-        credits: 'Listed in the site',
-        tags: ['library'],
-        featured: true
-    },{
         // not really an extension, but it's easiest to present it as one
         name: 'ExtForge',
         href: 'https://jwklong.github.io/extforge',
