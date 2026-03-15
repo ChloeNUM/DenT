@@ -13,7 +13,7 @@ $ui-white-transparent: hsla(0, 100%, 100%, 0.25);
 $ui-transparent: hsla(0, 100%, 100%, 0); 
 
 $ui-black-transparent-default: hsla(0, 0%, 0%, 0.15); 
-$ui-black-transparent: var(--ui-black-transparent, $ui-black-transparent-default);
+$ui-black-transparent: hsla(0, 100%, 100%, 0.25); 
 
 $text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); /* #575E75 */
 $text-primary-transparent: hsla(225, 15%, 40%, 0.75);
@@ -25,7 +25,7 @@ $motion-transparent: hsla(330, 100%, 65%, 0.35);
 $motion-light-transparent: hsla(330, 100%, 45%, 0.15);
 
 /* Dark mode top bar override */
-$motion-primary-dark: hsla(330, 100%, 50%, 1);       /* Vibrant Pink for Dark Mode */
+$motion-primary-dark: hsl(329, 100% 64.9%, 1);       /* Vibrant Pink for Dark Mode */
 
 $ui-primary-light: hsla(215, 100%, 95%, 1);
 $ui-secondary-light: hsla(215, 75%, 95%, 1);
